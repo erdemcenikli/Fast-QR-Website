@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>Link — QR Code & Barcode Scanner App for iPhone | Fast, Private, Offline</title>
+  <meta name="description" content="Link is a fast, privacy-first QR code and barcode scanner app for iPhone. Scan QR codes, EAN, UPC, Code 128, Data Matrix and more. Works offline. No ads. No sign up." />
+  <link rel="canonical" href="https://www.example.com/" />
+  <link rel="alternate" hreflang="en" href="https://www.example.com/" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Link — QR and Barcode Scanner for iPhone" />
+  <meta property="og:description" content="Fast, private, offline QR and barcode scanning. Built for iPhone." />
+  <meta property="og:url" content="https://www.example.com/" />
+  <meta property="og:image" content="https://www.example.com/og-cover.png" />
+  <meta property="og:image:alt" content="Link app scanning a QR code on iPhone" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:site_name" content="Link" />
+
+  <!-- Apple Smart App Banner. Replace YOUR_APP_ID and optional app-argument if you have universal links/custom scheme. -->
+  <meta name="apple-itunes-app" content="app-id=6749324199, app-argument=link://open" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+  <!-- Tailwind CSS (CDN build for quick launch) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef7ff', 100: '#d9edff', 200: '#aedaff', 300: '#7ac1ff', 400: '#4aa0ff', 500: '#1f7fff', 600: '#0e64e6', 700: '#0b4fc0', 800: '#0e4496', 900: '#133d77'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Structured Data: MobileApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Link",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "iOS",
+    "description": "A fast, privacy-first QR and barcode scanner for iPhone. Works offline; supports QR, EAN, UPC, Code 128, and Data Matrix.",
+    "screenshot": "https://www.example.com/og-cover.png",
+    "downloadUrl": "https://apps.apple.com/tr/app/qr-code-barcode-scanner-link/id6749324199",
+    "softwareVersion": "1.0.0",
+    "inLanguage": "en",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+    "publisher": {"@type": "Organization", "name": "Link Labs"}
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage for rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does Link work offline?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Link scans QR and most common barcodes entirely on-device, so it works without an internet connection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which codes can Link scan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Link supports QR, EAN-13/8, UPC-A/E, Code 128, Code 39, Data Matrix, PDF417, and more."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What about privacy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Scans are processed on your iPhone. Images are not uploaded to servers, and no account is required."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Subtle animated gradient background */
+    .hero-bg {
+      background: radial-gradient(1200px 600px at 80% -10%, rgba(31,127,255,0.18), transparent 60%),
+                  radial-gradient(900px 500px at -10% 20%, rgba(16,24,40,0.12), transparent 65%),
+                  linear-gradient(180deg, #0b1020 0%, #0c1224 40%, #0e162b 100%);
+    }
+    .glass { backdrop-filter: saturate(180%) blur(14px); background: rgba(255,255,255,0.06); }
+  </style>
+  <!-- Structured Data: Organization & Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Link Labs",
+    "url": "https://www.example.com/",
+    "logo": "https://www.example.com/logo.png",
+    "sameAs": [
+      "https://twitter.com/yourbrand",
+      "https://www.linkedin.com/company/yourbrand"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.example.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Link — QR Code & Barcode Scanner", "item": "https://www.example.com/"}
+    ]
+  }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <!-- Top Bar -->
+  <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-slate-950/60">
+    <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 group" aria-label="Link home">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="transition-transform group-hover:rotate-12"><path d="M8.8 7.2a4 4 0 0 1 5.7 0l2.3 2.3a4 4 0 0 1 0 5.7l-1.6 1.6" stroke="#7ac1ff" stroke-width="1.5"/><path d="M6.2 9.8a4 4 0 0 0 0 5.7l2.3 2.3a4 4 0 0 0 5.7 0l1.3-1.3" stroke="#4aa0ff" stroke-width="1.5"/></svg>
+        <span class="font-semibold tracking-tight">Link</span>
+      </a>
+      <nav class="hidden gap-8 md:flex text-sm text-slate-300">
+        <a href="#features" class="hover:text-white">Features</a>
+        <a href="#how" class="hover:text-white">How it works</a>
+        <a href="#faq" class="hover:text-white">FAQ</a>
+        <a href="#contact" class="hover:text-white">Support</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a id="cta-header" href="https://apps.apple.com/tr/app/qr-code-barcode-scanner-link/id6749324199" target="_blank" rel="noopener" class="inline-flex items-center rounded-xl bg-brand-500 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-400">Get the App</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-bg">
+    <div class="mx-auto max-w-7xl px-6 pt-20 pb-16 md:pt-24 md:pb-24">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">QR Code & Barcode Scanner for iPhone</h1>
+          <p class="mt-4 text-lg text-slate-300 max-w-xl">Link is a fast, privacy-first QR and barcode scanner for iPhone. Works offline. Supports QR, EAN, UPC, Code 128, Data Matrix, and more.</p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a id="cta-hero" href="https://apps.apple.com/tr/app/qr-code-barcode-scanner-link/id6749324199" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-2xl bg-white text-slate-900 px-6 py-3 font-semibold shadow hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-white/40">Open in App or Get on App Store</a>
+            <a href="#features" class="inline-flex items-center justify-center rounded-2xl border border-white/20 px-6 py-3 font-semibold text-white hover:bg-white/5">See features</a>
+          </div>
+          <p class="mt-3 text-xs text-slate-400">No account. No ads. On-device scanning.</p>
+        </div>
+        <div class="relative">
+          <!-- Mock device card -->
+          <div class="glass rounded-3xl p-5 ring-1 ring-white/10 shadow-2xl">
+            <div class="rounded-2xl bg-slate-900/60 ring-1 ring-white/10 p-4">
+              <div class="aspect-[9/19.5] w-full rounded-xl bg-gradient-to-b from-slate-800 to-slate-900 ring-1 ring-white/10 p-6 flex items-center justify-center">
+                <!-- Simple QR illustration -->
+                <svg viewBox="0 0 200 200" class="w-48 h-48" role="img" aria-label="QR code illustration">
+                  <rect width="200" height="200" fill="#0f172a"/>
+                  <rect x="20" y="20" width="50" height="50" fill="#e2e8f0"/>
+                  <rect x="130" y="20" width="50" height="50" fill="#e2e8f0"/>
+                  <rect x="20" y="130" width="50" height="50" fill="#e2e8f0"/>
+                  <rect x="75" y="75" width="50" height="50" fill="#94a3b8"/>
+                  <rect x="130" y="130" width="20" height="20" fill="#e2e8f0"/>
+                  <rect x="160" y="130" width="20" height="20" fill="#e2e8f0"/>
+                  <rect x="130" y="160" width="20" height="20" fill="#e2e8f0"/>
+                  <rect x="60" y="150" width="10" height="10" fill="#e2e8f0"/>
+                  <rect x="90" y="150" width="10" height="10" fill="#e2e8f0"/>
+                  <rect x="80" y="165" width="10" height="10" fill="#e2e8f0"/>
+                </svg>
+              </div>
+            </div>
+            <div class="mt-4 grid grid-cols-3 gap-3 text-center text-xs text-slate-300">
+              <div class="rounded-xl border border-white/10 p-3">Offline</div>
+              <div class="rounded-xl border border-white/10 p-3">Privacy-first</div>
+              <div class="rounded-xl border border-white/10 p-3">No ads</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logos / Social proof (optional placeholders) -->
+  <section class="bg-slate-950">
+    <div class="mx-auto max-w-7xl px-6 py-10 border-y border-white/5">
+      <p class="text-center text-sm text-slate-400">Supports popular formats: QR, EAN-13/8, UPC-A/E, Code 128, Code 39, Data Matrix, PDF417</p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="bg-slate-950">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Built for speed, designed for privacy</h2>
+      <p class="mt-3 text-slate-300 max-w-2xl">Everything runs on-device using Apple frameworks. Link launches fast, focuses instantly, and reads codes in challenging lighting.</p>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="rounded-2xl border border-white/10 p-6">
+          <h3 class="font-semibold text-lg">Instant autofocus</h3>
+          <p class="mt-2 text-slate-300">Open, point, scan. No shutter. No taps required.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 p-6">
+          <h3 class="font-semibold text-lg">On-device privacy</h3>
+          <p class="mt-2 text-slate-300">Images are processed locally. Nothing is uploaded.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 p-6">
+          <h3 class="font-semibold text-lg">Offline mode</h3>
+          <p class="mt-2 text-slate-300">No internet needed for scanning common formats.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 p-6">
+          <h3 class="font-semibold text-lg">Format coverage</h3>
+          <p class="mt-2 text-slate-300">QR, EAN, UPC, Code 128, Code 39, Data Matrix, PDF417.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 p-6">
+          <h3 class="font-semibold text-lg">Actions that save time</h3>
+          <p class="mt-2 text-slate-300">Open links, copy text, add contacts, or share with one tap.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 p-6">
+          <h3 class="font-semibold text-lg">History (opt-in)</h3>
+          <p class="mt-2 text-slate-300">Keep a private log on your device. Clear anytime.</p>
+        </article>
+      </div>
+
+      <div class="mt-12 flex flex-wrap gap-3">
+        <a id="cta-features" href="https://apps.apple.com/tr/app/qr-code-barcode-scanner-link/id6749324199" target="_blank" rel="noopener" class="inline-flex items-center rounded-2xl bg-brand-500 px-6 py-3 font-semibold text-white shadow hover:bg-brand-600">Get Link on the App Store</a>
+        <a href="#how" class="inline-flex items-center rounded-2xl border border-white/10 px-6 py-3 font-semibold hover:bg-white/5">How it works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="bg-slate-950">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight">How it works</h2>
+      <ol class="mt-8 grid gap-6 md:grid-cols-3">
+        <li class="rounded-2xl border border-white/10 p-6">
+          <h3 class="font-semibold">1. Open Link</h3>
+          <p class="mt-2 text-slate-300">Instant camera access with autofocus and torch control.</p>
+        </li>
+        <li class="rounded-2xl border border-white/10 p-6">
+          <h3 class="font-semibold">2. Point at the code</h3>
+          <p class="mt-2 text-slate-300">Link reads the code and understands its content.</p>
+        </li>
+        <li class="rounded-2xl border border-white/10 p-6">
+          <h3 class="font-semibold">3. Take the action</h3>
+          <p class="mt-2 text-slate-300">Open a URL, copy text, save contact, or share safely.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SEO copy block for long-tail queries -->
+  <section id="learn" class="bg-slate-950">
+    <div class="mx-auto max-w-7xl px-6 pb-4">
+      <h2 class="sr-only">About Link QR code reader and barcode scanner</h2>
+      <p class="mt-2 text-slate-300 max-w-3xl">Link is an iPhone QR code reader and barcode scanner app that recognizes QR codes, EAN-13/8, UPC-A/E, Code 128, Code 39, Data Matrix and PDF417. It opens website links, adds Wi-Fi networks, saves vCards/contacts, copies text, and looks up products by barcode — all on-device, with no ads. If you searched for "QR code scanner iPhone", "barcode scanner for iOS", or "QR reader app without ads", this is built for you.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-slate-950">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Frequently asked questions</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <details class="rounded-2xl border border-white/10 p-6 open:shadow">
+          <summary class="cursor-pointer font-semibold">Does Link work offline?</summary>
+          <p class="mt-3 text-slate-300">Yes. Scanning runs entirely on your iPhone for common formats.</p>
+        </details>
+        <details class="rounded-2xl border border-white/10 p-6">
+          <summary class="cursor-pointer font-semibold">Which codes are supported?</summary>
+          <p class="mt-3 text-slate-300">QR, EAN-13/8, UPC-A/E, Code 128, Code 39, Data Matrix, PDF417, and more.</p>
+        </details>
+        <details class="rounded-2xl border border-white/10 p-6">
+          <summary class="cursor-pointer font-semibold">Is my data private?</summary>
+          <p class="mt-3 text-slate-300">On-device processing means images are not sent to servers. You control optional history.</p>
+        </details>
+        <details class="rounded-2xl border border-white/10 p-6">
+          <summary class="cursor-pointer font-semibold">Is Link free?</summary>
+          <p class="mt-3 text-slate-300">Yes. Link is free to download. Some advanced features may require in-app purchase if you add them later.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <section id="contact" class="bg-slate-950">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="rounded-3xl border border-white/10 p-8 md:p-12">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div>
+            <h3 class="text-2xl font-bold">Ready to scan faster</h3>
+            <p class="mt-2 text-slate-300">Get Link on your iPhone now.</p>
+          </div>
+          <a id="cta-footer" href="https://apps.apple.com/tr/app/qr-code-barcode-scanner-link/id6749324199" target="_blank" rel="noopener" class="inline-flex items-center rounded-2xl bg-brand-500 px-6 py-3 font-semibold text-white shadow hover:bg-brand-600">Download on the App Store</a>
+        </div>
+      </div>
+      <footer class="mt-12 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-400">
+        <p>© <span id="year"></span> Link Labs</p>
+        <nav class="flex gap-4">
+          <a href="/privacy" class="hover:text-white">Privacy</a>
+          <a href="/terms" class="hover:text-white">Terms</a>
+          <a href="mailto:support@example.com" class="hover:text-white">Support</a>
+          <a href="/sitemap.xml" class="hover:text-white">Sitemap</a>
+        </nav>
+      </footer>
+    </div>
+  </section>
+
+  <script>
+    // Attempt to open the app; if not installed, fall back to the App Store.
+    function openAppOrStore(event) {
+      if (!event) return;
+      event.preventDefault();
+      var appStoreUrl = 'https://apps.apple.com/tr/app/qr-code-barcode-scanner-link/id6749324199';
+      var appScheme = 'link://open';
+      var now = Date.now();
+      var iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      iframe.src = appScheme;
+      document.body.appendChild(iframe);
+      setTimeout(function () {
+        if (Date.now() - now < 1500) {
+          window.open(appStoreUrl, '_blank', 'noopener');
+        }
+        document.body.removeChild(iframe);
+      }, 1200);
+    }
+
+    ['cta-header', 'cta-hero', 'cta-features', 'cta-footer'].forEach(function (id) {
+      var button = document.getElementById(id);
+      if (button) {
+        button.addEventListener('click', openAppOrStore);
+      }
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
